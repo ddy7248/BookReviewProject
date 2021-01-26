@@ -1,0 +1,126 @@
+/*main-header*/
+#main-header {
+  /* 크기 조절 */
+  width: 100%;
+  min-width: 1320px;
+
+  /* 위치 설정 */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  background-color: #fff;
+  border-bottom: 1px solid gray;
+}
+
+#main-header .wrap-head {
+  /* 수평 정렬 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; 
+  
+  height: 60px;
+  padding: 0 40px;
+
+}
+
+#main-header .wrap-head .logo a {
+  display: block;
+  padding: 16px;
+  color: #666;
+}
+
+#main-header .main-gnb ul {
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+  margin: auto;
+}
+
+#main-header .main-gnb li {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  padding: auto;
+}
+
+#main-header .main-gnb a {
+  display: block;
+  padding: 14px 16px;
+  color: #666;
+}
+
+#main-header .main-gnb li:hover {
+  background-color: rgba(55, 5, 5, 0.057);
+}
+
+#main-header .side-bar form{ align-content: center;}
+#main-header .side-bar .search-bar {
+  width: 400px;
+}
+
+#main-header .side-bar .search-img{
+  width: 20px;
+}
+
+#main-header .gnbloginInfo ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
+}
+#main-header .gnbloginInfo li{ 
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  padding: 5px auto;
+}
+#main-header .gnbloginInfo a{
+  display: block;
+  padding: 14px 16px;
+  color: #666;
+}
+
+/* 드롭다운 */
+.dropdown-btn{
+	height: 60px;
+}
+
+.dropdown-menu > a, .dropdown-menu_genre > a {
+  text-align: left;
+  min-width: 120px;
+  background-color: white;
+  color: black;
+}
+
+.dropdown-menu > a:hover, .dropdown-menu_genre>a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-menu {
+ 	position: absolute;
+	display: none;
+	top: 58px;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown_genre{
+	position: relative;
+}
+.dropdown-menu_genre{
+	position: absolute;
+	min-width: 10rem;
+	left: 158px;
+	top: 0;
+	display: none;
+}
+.dropdown_genre:hover .dropdown-menu_genre{
+	display: block;
+}

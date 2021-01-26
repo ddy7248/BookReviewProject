@@ -1,0 +1,155 @@
+#container .slide {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+
+  border-bottom: 1px solid gray;
+}
+
+#container .part_title {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+
+#container .slide-list {
+  width: 1200px;
+  margin: 50px auto;
+}
+
+/*첫번째 슬라이드*/
+.slide input:nth-of-type(1) {
+  display: none;
+}
+.slide input:nth-of-type(1) ~ .slide-list1 {
+  display: none;
+}
+.slide input:nth-of-type(1):checked ~ .slide-list1 {
+  display: block;
+}
+.slide input:nth-of-type(1):checked ~ .buttons > label:nth-of-type(2) {
+  display: block;
+}
+.slide input:nth-of-type(1):checked ~ .buttons > label:nth-of-type(1) {
+  display: none;
+}
+
+/*두번째 슬라이드*/
+.slide input:nth-of-type(2) {
+  display: none;
+}
+.slide input:nth-of-type(2) ~ .slide-list2 {
+  display: none;
+}
+.slide input:nth-of-type(2):checked ~ .slide-list2 {
+  display: block;
+}
+.slide input:nth-of-type(2):checked ~ .buttons > label:nth-of-type(1) {
+  display: blcok;
+}
+.slide input:nth-of-type(2):checked ~ .buttons > label:nth-of-type(2) {
+  display: none;
+}
+
+/*이전버튼*/
+section.buttons > label:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+  top: 170px;
+  cursor: pointer;
+}
+
+/*버튼 크기 지정*/
+section.buttons img {
+  width: 100px;
+}
+
+/*다음버튼*/
+section.buttons > label:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  top: 170px;
+  cursor: pointer;
+}
+
+.slide-list ul {
+  overflow: hidden;
+}
+
+.slide-list li {
+  float: left;
+  margin: 0 28px;
+}
+
+.book-cover {
+  box-sizing: content-box;
+  border: 1px solid rgb(214, 212, 212);
+}
+.cover{
+  border-bottom: 1px solid gray;
+}
+
+/*cover 크기 지정*/
+.slide-item .cover {
+  width: 180px;
+  height: 270px;
+}
+/*book-buttons 크기 지정*/
+.slide-list .book-buttons {
+  width: 180px;
+  height: 30px;
+  overflow: hidden;
+
+  background-color: black;
+  color: white;
+}
+/*book-info 크기 지정*/
+.book-info {
+  width: 180px;
+  height: 70px;
+  text-align: center;
+}
+
+.bim {
+  width: 180px;
+  height: 270px;
+}
+
+.likeim {
+  width: 20px;
+}
+
+p.bpos {
+  position: relative;
+  display: block;
+}
+
+p.bpos .item-rank {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f04653;
+  color: white;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}
+
+.like {
+  float: left;
+  width: 90px;
+}
+
+.likecnt {
+  float: right;
+  width: 90px;
+}
+
+.book-info strong {
+  display: block;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

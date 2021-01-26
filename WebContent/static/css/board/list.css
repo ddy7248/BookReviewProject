@@ -1,0 +1,28 @@
+.contents_wrap{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.contents{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.board_list{
+	border-top: 2px solid #dee2e6;
+	border-bottom: 2px solid #dee2e6;
+}
+
+.board_list td, .board_list th{
+	text-align: center;
+}
+
+.board_list td:nth-child(3) {
+	text-align: left;
+}
+
+a:link, a:visited, a:active {
+	color: black;
+}
